@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block titulo %}Vehículos Antiguos{% endblock %}
+
+{% block contenido %}
+  <h1>Vehículos Antiguos</h1>
+  <p>Un vistazo al nacimiento de los vehículos y algunos modelos clásicos.</p>
+
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/t.jpg') }}" class="img-fluid rounded"><b>Ford T (1908)</b> - Uno de los primeros autos producidos en masa.</p></div>
+    <img src="{{ url_for('static', filename='img/c.jpg') }}" class="img-fluid rounded"><p><b>Chevrolet Bel Air (1957)</b> - Ícono del estilo americano.</p></div>
+    <img src="{{ url_for('static', filename='img/v.jpg') }}" class="img-fluid rounded"><p><b>Volkswagen Beetle</b> - El auto del pueblo alemán.</p></div>
+  </div>
+
+  <div class="row mt-4">
+    <img src="{{ url_for('static', filename='img/r.jpg') }}" class="img-fluid rounded"><b>Rolls Royce Silver Ghost</b> - Lujo y elegancia británica.</p></div>
+    <img src="{{ url_for('static', filename='img/f.jpg') }}" class="img-fluid rounded"><b>Ferrari 250 GTO</b> - Belleza y potencia italiana.</p></div>
+  </div>
+{% endblock %}

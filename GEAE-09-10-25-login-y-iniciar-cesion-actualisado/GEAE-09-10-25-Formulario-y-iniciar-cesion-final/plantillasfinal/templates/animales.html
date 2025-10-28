@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block titulo %}Animales Exóticos{% endblock %}
+
+{% block contenido %}
+  <h1>Animales Exóticos</h1>
+  <p>El reino animal es maravilloso y diverso. Aquí te mostramos algunos animales sorprendentes.</p>
+
+  <h3>Acuáticos</h3>
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/delfin.jpg') }}" class="img-fluid rounded"><p>Delfín - Mamífero marino inteligente.</p></div>
+    <img src="{{ url_for('static', filename='img/pez leon.jpg') }}" class="img-fluid rounded"><p>Pez León - Hermoso pero venenoso.</p></div>
+  </div>
+
+  <h3 class="mt-4">Terrestres</h3>
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/tigre.jpg') }}" class="img-fluid rounded"><p>Tigre - Felino fuerte y sigiloso.</p></div>
+    <img src="{{ url_for('static', filename='img/elefantes.jpg') }}" class="img-fluid rounded"><p>Elefante - Gigante noble de la selva.</p></div>
+  </div>
+
+  <h3 class="mt-4">Aéreos</h3>
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/guacamaya.jpg') }}" class="img-fluid rounded"><p>Guacamaya - Ave colorida de América.</p></div>
+    <img src="{{ url_for('static', filename='img/agila.jpg') }}" class="img-fluid rounded"><p>Águila - Símbolo de fuerza y libertad.</p></div>
+  </div>
+{% endblock %}

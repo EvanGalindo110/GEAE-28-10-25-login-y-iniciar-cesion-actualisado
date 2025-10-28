@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block titulo %}iniciar sesion{% endblock %}
+{% block contenido %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h3 class="text-center">Inicia sesión</h3>
+                <p class="text-center">Es rápido y fácil.</p>
+
+                {% if error %}
+                <div class="alert alert-danger text-center">{{ error }}</div>
+                {% endif %}
+
+                <form method="POST" action="/iniciar cesion">
+                    <div class="row">
+                        <div class="col mb-2">
+                            <input type="email" class="form-control" placeholder="Correo" name="correo" required>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" required>
+                    </div>
+
+                    <div class="d-grid mt-3">
+                        <button type="submit" class="btn btn-success">Entrar</button>
+                    </div>
+
+                    <p class="text-center mt-3"><a href="#">¿No recuerdas tu contraseña?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

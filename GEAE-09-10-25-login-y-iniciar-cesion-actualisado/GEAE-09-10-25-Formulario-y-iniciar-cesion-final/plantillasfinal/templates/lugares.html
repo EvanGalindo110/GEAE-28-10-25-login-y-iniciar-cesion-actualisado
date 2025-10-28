@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block titulo %}Las Maravillas del Mundo{% endblock %}
+
+{% block contenido %}
+  <h1>Las 7 Maravillas del Mundo</h1>
+  <p>Conoce las siete maravillas del mundo moderno con imágenes y videos.</p>
+
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/chichen.jpg') }}" class="img-fluid rounded">Chichén Itzá (México)</p></div>
+    <img src="{{ url_for('static', filename='img/coliceo.jpg') }}" class="img-fluid rounded">Coliseo (Italia)</p></div>
+  </div>
+
+  <div class="row mt-3">
+    <img src="{{ url_for('static', filename='img/machu pichu.jpg') }}" class="img-fluid rounded">Machu Picchu (Perú)</p></div>
+    <img src="{{ url_for('static', filename='img/petra.jpg') }}" class="img-fluid rounded">Petra (Jordania)</p></div>
+  </div>
+
+  <div class="row mt-3">
+    <img src="{{ url_for('static', filename='img/china.jpg') }}" class="img-fluid rounded">Muralla China</p></div>
+    <img src="{{ url_for('static', filename='img/tal.jpg') }}" class="img-fluid rounded">Taj Mahal (India)</p></div>
+  </div>
+
+  <div class="row mt-3">
+    <img src="{{ url_for('static', filename='img/cañon.jpg') }}" class="img-fluid rounded">Gran cañon (EUA)</p></div>
+  </div>
+{% endblock %}
